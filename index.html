@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Manager</title>
+  <link rel="stylesheet" href="style.css" /> <!-- ✅ External CSS -->
+</head>
+<body>
+
+  <h2>Contact Manager</h2>
+
+  <div class="form">
+    <input type="text" id="name" placeholder="Enter Name" />
+    <input type="text" id="phone" placeholder="Enter Phone" />
+    <button onclick="addContact()">Add Contact</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="contactList"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
